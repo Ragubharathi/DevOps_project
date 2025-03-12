@@ -23,7 +23,7 @@ resource "aws_eks_cluster" "eks_cluster" {
   role_arn = aws_iam_role.eks_cluster_role.arn
 
   vpc_config {
-    subnet_ids = module.vpc.pri_sub.id
+    subnet_ids = module.vpc.subnet_id
   }
 
   depends_on = [
@@ -55,7 +55,7 @@ resource "aws_eks_node_group" "node_group" {
   cluster_name    = aws_eks_cluster.eks_cluster.name
   node_group_name = "eks-node-group"
   node_role_arn   = aws_iam_role.eks_node_role.arn
-  subnet_ids      = module.vpc.pri_sub.id
+  subnet_ids      = module.vpc.subnet_id
   scaling_config {
     desired_size = 2
     max_size     = 3
