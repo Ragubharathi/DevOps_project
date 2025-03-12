@@ -1,4 +1,5 @@
-/* variable "my_region" {module.vpc.pri_sub.idmodule.vpc.pripri_sub.idmy_vpc.  type = string
+variable "my_region" {
+  type = string
   description = "Name of the region"
 }
 
@@ -38,4 +39,4 @@ variable "cluster_name" {
 
 variable "key_name" {
   default = "eks-keypair"
-} */
+}

@@ -1,7 +1,7 @@
-/* resource "aws_security_group" "eks_sg" {
+resource "aws_security_group" "eks_sg" {
   name        = "eks-sg"
   description = "EKS Security Group"
-  vpc_id      = module.vpc.vpc_id  # Referencing VPC ID from the module
+  vpc_id      = module.vpc.aws_vpc.my_vpc.id  # Referencing VPC ID from the module
 
   ingress {
     from_port   = 22
@@ -27,4 +27,4 @@
   tags = {
     Name = "eks-sg"
   }
-} */
+}
