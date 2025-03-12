@@ -12,7 +12,7 @@ variable "AZ1" {
   type = string
   description = "Availabilitiy Zone 1"
 }
-[
+
 variable "AZ2" {
   type = string
   description = "Availability Zone 2"
