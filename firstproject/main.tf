@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "./Modules/vpc"
+  source = "/root/DevOps_project/Modules"
   my_region = "ap-south-1"
   vpc_cidr = "100.100.0.1"
   AZ1 = "ap-south-1a"
