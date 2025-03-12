@@ -34,11 +34,9 @@ variable "tags" {
 }
 
 variable "cluster_name" {
-  type = string
-  description = "Name of the clustername"
+  default = "eks_cluster_firstproject"
 }
 
 variable "key_name" {
-  type = string
-  description = "name of the eks-keypair"
+  default = "eks-keypair"
 }
