@@ -36,3 +36,7 @@ variable "tags" {
 variable "cluster_name" {
   default = "eks_cluster_firstproject"
 }
+
+variable "key_name" {
+  default = "eks-keypair"
+}
