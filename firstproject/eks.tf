@@ -1,4 +1,4 @@
-# IAM Role for EKS Cluster
+/* # IAM Role for EKS Cluster
 resource "aws_iam_role" "eks_cluster_role" {
   name = "eks-cluster-role"
 
@@ -73,7 +73,7 @@ resource "aws_eks_node_group" "node_group" {
   depends_on = [
     aws_iam_role_policy_attachment.node_group_policy
   ]
-}
+} */
 
 
 

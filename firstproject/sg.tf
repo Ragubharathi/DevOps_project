@@ -1,4 +1,4 @@
-resource "aws_security_group" "eks_sg" {
+/* resource "aws_security_group" "eks_sg" {
   name        = "eks-sg"
   description = "EKS Security Group"
   vpc_id      = module.vpc.vpc_id  # Referencing VPC ID from the module
@@ -27,4 +27,4 @@ resource "aws_security_group" "eks_sg" {
   tags = {
     Name = "eks-sg"
   }
-}
+} */
